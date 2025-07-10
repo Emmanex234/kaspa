@@ -1,299 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kaspa (KAS) Token Presale</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --primary-green: #90eede;
-      --secondary-green: #4eb4d3;
-      --dark-bg: #0a0a0a;
-    }
-    body {
-      font-family: 'Space Grotesk', sans-serif;
-      background-color: var(--dark-bg);
-      color: var(--primary-green);
-      overflow-x: hidden;
-    }
-    .animated-bg {
-      position: fixed;
-      top: 0; left: 0; width: 100%; height: 100%;
-      z-index: -1;
-      background: linear-gradient(-45deg, #000000, #0a160a, #000000, #050a05);
-      background-size: 400% 400%;
-      animation: gradientBG 15s ease infinite;
-    }
-    @keyframes gradientBG {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-    .glow-text { text-shadow: 0 0 5px rgba(144, 238, 144, 0.5); }
-    .glow-box { box-shadow: 0 0 15px rgba(144, 238, 144, 0.3); }
-    .card-bg {
-      background: rgba(10, 20, 10, 0.7);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(144, 238, 144, 0.1);
-    }
-    .address-box {
-      background: rgba(0, 0, 0, 0.5);
-      border: 1px solid var(--primary-green);
-      transition: all 0.3s ease;
-    }
-    .address-box:hover { box-shadow: 0 0 15px rgba(144, 238, 144, 0.5); }
-    .progress-bar {
-      background: linear-gradient(90deg, #0a200a, var(--primary-green));
-      animation: progress-pulse 2s ease-in-out infinite alternate;
-    }
-    @keyframes progress-pulse {
-      0% { opacity: 0.8; }
-      100% { opacity: 1; }
-    }
-    .btn-primary {
-      background: linear-gradient(135deg, #0a200a, var(--primary-green));
-      transition: all 0.3s ease;
-    }
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 5px 15px rgba(144, 238, 144, 0.4);
-    }
-    .pulse {
-      animation: pulse 2s infinite;
-    }
-    @keyframes pulse {
-      0% { transform: scale(0.95); opacity: 0.8; }
-      50% { transform: scale(1); opacity: 1; }
-      100% { transform: scale(0.95); opacity: 0.8; }
-    }
-    .transaction-item {
-      border-left: 3px solid var(--primary-green);
-      transition: all 0.3s ease;
-    }
-    .transaction-item:hover {
-      background: rgba(144, 238, 144, 0.05);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaspa (KAS) Token Airdrop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-green: #90eede;
+            --secondary-green: #4eb4d3;
+            --dark-bg: #0a0a0a;
+        }
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--primary-green);
+            overflow-x: hidden;
+        }
+        .animated-bg {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            z-index: -1;
+            background: linear-gradient(-45deg, #000000, #0a160a, #000000, #050a05);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .glow-text { text-shadow: 0 0 5px rgba(144, 238, 144, 0.5); }
+        .glow-box { box-shadow: 0 0 15px rgba(144, 238, 144, 0.3); }
+        .card-bg {
+            background: rgba(10, 20, 10, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(144, 238, 144, 0.1);
+        }
+        .address-box {
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid var(--primary-green);
+            transition: all 0.3s ease;
+        }
+        .address-box:hover { box-shadow: 0 0 15px rgba(144, 238, 144, 0.5); }
+        .progress-bar {
+            background: linear-gradient(90deg, #0a200a, var(--primary-green));
+            animation: progress-pulse 2s ease-in-out infinite alternate;
+        }
+        @keyframes progress-pulse {
+            0% { opacity: 0.8; }
+            100% { opacity: 1; }
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #0a200a, var(--primary-green));
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(144, 238, 144, 0.4);
+        }
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(0.95); opacity: 0.8; }
+            50% { transform: scale(1); opacity: 1; }
+            100% { transform: scale(0.95); opacity: 0.8; }
+        }
+        .transaction-item {
+            border-left: 3px solid var(--primary-green);
+            transition: all 0.3s ease;
+        }
+        .transaction-item:hover {
+            background: rgba(144, 238, 144, 0.05);
+        }
+    </style>
 </head>
 <body class="min-h-screen">
-  <div class="animated-bg"></div>
-  <div class="container mx-auto px-4 py-8 relative z-10">
-    <!-- Header -->
-    <header class="flex flex-col items-center mb-12">
-      <img src="https://i0.wp.com/kaspa.org/wp-content/uploads/2025/03/Kaspa-Stacked-Dark-Reverse.png?w=770&ssl=1" class="w-64 mb-6 pulse">
-      <h1 class="text-4xl md:text-5xl font-bold text-center glow-text mb-4">KASPA TOKEN AIRDROP</h1>
-      <p class="text-xl text-center max-w-3xl opacity-90">The world's first blockDAG - fastest, open-source, decentralized & fully scalable Layer-1</p>
-    </header>
+    <div class="animated-bg"></div>
+    <div class="container mx-auto px-4 py-8 relative z-10">
+        <!-- Header -->
+        <header class="flex flex-col items-center mb-12">
+            <img src="https://i0.wp.com/kaspa.org/wp-content/uploads/2025/03/Kaspa-Stacked-Dark-Reverse.png?w=770&ssl=1" class="w-64 mb-6 pulse">
+            <h1 class="text-4xl md:text-5xl font-bold text-center glow-text mb-4">KASPA TOKEN AIRDROP</h1>
+            <p class="text-xl text-center max-w-3xl opacity-90">The world's first blockDAG - fastest, open-source, decentralized & fully scalable Layer-1</p>
+        </header>
 
-    <!-- Content -->
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-      <!-- Presale Details -->
-      <div class="card-bg rounded-xl p-4 sm:p-6 lg:p-8 glow-box">
-        <h2 class="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 glow-text">PRESALE DETAILS</h2>
-        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 mb-6 sm:mb-8">
-          <div class="text-center col-span-2 sm:col-span-1 bg-black bg-opacity-30 p-3 rounded-lg">
-            <div class="text-2xl sm:text-3xl font-bold">11,500,000</div>
-            <div class="text-sm sm:text-base opacity-80">Total KAS</div>
-          </div>
-          <div class="text-center bg-black bg-opacity-30 p-3 rounded-lg">
-            <div class="text-2xl sm:text-3xl font-bold" id="sold-kas">3,850,000</div>
-            <div class="text-sm sm:text-base opacity-80">KAS Sold</div>
-          </div>
-          <div class="text-center bg-black bg-opacity-30 p-3 rounded-lg">
-            <div class="text-2xl sm:text-3xl font-bold" id="remaining-kas">7,650,000</div>
-            <div class="text-sm sm:text-base opacity-80">KAS Remaining</div>
-          </div>
-        </div>
-        <div class="mb-4 sm:mb-6">
-          <div class="h-2 sm:h-3 bg-black bg-opacity-50 rounded-full mb-1 sm:mb-2 overflow-hidden">
-            <div class="progress-bar h-full rounded-full" style="width: 33%"></div>
-          </div>
-          <div class="flex justify-between text-xs sm:text-sm opacity-80">
-            <span>0%</span><span>33%</span><span>100%</span>
-          </div>
-        </div>
-        <div class="mb-4 sm:mb-6">
-          <h3 class="text-base sm:text-lg font-semibold mb-2 sm:mb-3 glow-text">KASPA DEPOSIT ADDRESS</h3>
-          <div class="address-box rounded-lg p-3 sm:p-4 mb-3 sm:mb-4 break-all font-mono text-xs sm:text-sm md:text-base">
-            qzz55pjzn8rmpde8tw9rd84q248fxefjduc3hm2ds3yp2lcmet5jgfg7xqu3c
-          </div>
-          <button onclick="copyAddress()" class="btn-primary text-black font-bold py-2 sm:py-3 px-4 sm:px-6 rounded-lg w-full text-sm sm:text-base">COPY ADDRESS</button>
-        </div>
-      </div>
-
-      <!-- Tokenomics Card with Tabs -->
-      <div class="card-bg rounded-xl p-8 glow-box">
-        <div class="flex mb-4">
-          <button onclick="switchTab('about')" id="aboutTab" class="px-3 py-1 rounded-md text-sm mr-2 bg-[#2B2E35] text-white">About</button>
-          <button onclick="switchTab('tokenomics')" id="tokenomicsTab" class="px-3 py-1 rounded-md text-sm bg-[#1E4024] text-green-400">Tokenomics</button>
-        </div>
-        <div id="aboutContent" class="hidden text-gray-300 text-sm">
-          <div class="card-bg rounded-xl p-8 glow-box">
-                <h2 class="text-2xl font-bold mb-6 glow-text">ABOUT KASPA</h2>
-                
-                <div class="space-y-4 mb-8">
-                    <p class="opacity-90">
-                        Kaspa is the fastest, open-source, decentralized & fully scalable Layer-1 in the world.
-                    </p>
-                    <p class="opacity-90">
-                        The world's first blockDAG – a digital ledger enabling parallel blocks and instant transaction confirmation – built on a robust proof-of-work engine with rapid single-second block intervals.
-                    </p>
-                    <p class="opacity-90">
-                        Built by industry pioneers, led by the people.
-                    </p>
-                </div>
-                
-                <div class="space-y-4">
-                    <h3 class="text-lg font-semibold glow-text">RESOURCES</h3>
-                    <div class="flex flex-wrap gap-4">
-                        <a href="https://explorer.kaspa.org/" 
-                           target="_blank" 
-                           class="btn-primary text-black font-bold py-2 px-6 rounded-lg flex-1 text-center">
-                            BLOCK EXPLORER
-                        </a>
-                        <a href="https://x.com/search?q=Kaspa" 
-                           target="_blank" 
-                           class="bg-black text-white font-bold py-2 px-6 rounded-lg flex-1 text-center border border-green-500 hover:bg-green-900 transition">
-                            TWITTER
-                        </a>
+        <!-- Content -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+            <!-- Airdrop Details -->
+            <div class="card-bg rounded-xl p-4 sm:p-6 lg:p-8 glow-box">
+                <h2 class="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 glow-text">AIRDROP DETAILS</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 mb-6 sm:mb-8">
+                    <div class="text-center col-span-2 sm:col-span-1 bg-black bg-opacity-30 p-3 rounded-lg">
+                        <div class="text-2xl sm:text-3xl font-bold">11,500,000</div>
+                        <div class="text-sm sm:text-base opacity-80">Total KAS</div>
+                    </div>
+                    <div class="text-center bg-black bg-opacity-30 p-3 rounded-lg">
+                        <div class="text-2xl sm:text-3xl font-bold" id="sold-kas">3,850,000</div>
+                        <div class="text-sm sm:text-base opacity-80">KAS Sold</div>
+                    </div>
+                    <div class="text-center bg-black bg-opacity-30 p-3 rounded-lg">
+                        <div class="text-2xl sm:text-3xl font-bold" id="remaining-kas">7,650,000</div>
+                        <div class="text-sm sm:text-base opacity-80">KAS Remaining</div>
                     </div>
                 </div>
+                <div class="mb-4 sm:mb-6">
+                    <div class="h-2 sm:h-3 bg-black bg-opacity-50 rounded-full mb-1 sm:mb-2 overflow-hidden">
+                        <div class="progress-bar h-full rounded-full" style="width: 33%"></div>
+                    </div>
+                    <div class="flex justify-between text-xs sm:text-sm opacity-80">
+                        <span>0%</span><span>33%</span><span>100%</span>
+                    </div>
+                </div>
+                <div class="mb-4 sm:mb-6">
+                    <h3 class="text-base sm:text-lg font-semibold mb-2 sm:mb-3 glow-text">KASPA DEPOSIT ADDRESS</h3>
+                    <div class="address-box rounded-lg p-3 sm:p-4 mb-3 sm:mb-4 break-all font-mono text-xs sm:text-sm md:text-base">
+                        qzz55pjzn8rmpde8tw9rd84q248fxefjduc3hm2ds3yp2lcmet5jgfg7xqu3c
+                    </div>
+                    <button onclick="copyAddress()" class="btn-primary text-black font-bold py-2 sm:py-3 px-4 sm:px-6 rounded-lg w-full text-sm sm:text-base">COPY ADDRESS</button>
+                </div>
+            </div>
+
+            <!-- Tokenomics Card with Tabs -->
+            <div class="card-bg rounded-xl p-8 glow-box">
+                <div class="flex mb-4">
+                    <button onclick="switchTab('about')" id="aboutTab" class="px-3 py-1 rounded-md text-sm mr-2 bg-[#2B2E35] text-white">About</button>
+                    <button onclick="switchTab('tokenomics')" id="tokenomicsTab" class="px-3 py-1 rounded-md text-sm bg-[#1E4024] text-green-400">Tokenomics</button>
+                </div>
+                <div id="aboutContent" class="hidden text-gray-300 text-sm">
+                    <div class="card-bg rounded-xl p-8 glow-box">
+                                <h2 class="text-2xl font-bold mb-6 glow-text">ABOUT KASPA</h2>
+                                
+                                <div class="space-y-4 mb-8">
+                                        <p class="opacity-90">
+                                                Kaspa is the fastest, open-source, decentralized & fully scalable Layer-1 in the world.
+                                        </p>
+                                        <p class="opacity-90">
+                                                The world's first blockDAG – a digital ledger enabling parallel blocks and instant transaction confirmation – built on a robust proof-of-work engine with rapid single-second block intervals.
+                                        </p>
+                                        <p class="opacity-90">
+                                                Built by industry pioneers, led by the people.
+                                        </p>
+                                </div>
+                                
+                                <div class="space-y-4">
+                                        <h3 class="text-lg font-semibold glow-text">RESOURCES</h3>
+                                        <div class="flex flex-wrap gap-4">
+                                                <a href="https://explorer.kaspa.org/" 
+                                                     target="_blank" 
+                                                     class="btn-primary text-black font-bold py-2 px-6 rounded-lg flex-1 text-center">
+                                                        BLOCK EXPLORER
+                                                </a>
+                                                <a href="https://x.com/search?q=Kaspa" 
+                                                     target="_blank" 
+                                                     class="bg-black text-white font-bold py-2 px-6 rounded-lg flex-1 text-center border border-green-500 hover:bg-green-900 transition">
+                                                        TWITTER
+                                                </a>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+                <div id="tokenomicsContent" class="block">
+                    <h2 class="text-lg font-semibold mb-4">Token Allocation</h2>
+                    <div class="flex items-center justify-center mb-2">
+                        <div class="relative w-48 h-48">
+                            <svg viewBox="0 0 36 36" class="w-full h-full">
+                                <path class="text-orange-400" fill="none" stroke="currentColor" stroke-width="4" stroke-dasharray="100, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            </svg>
+                            <div class="absolute inset-0 flex items-center justify-center text-xs text-gray-300 font-medium">Emissions</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center mb-4 text-sm text-gray-300">
+                        <span class="w-3 h-3 rounded-full bg-orange-400 mr-2"></span> Emissions <span class="ml-auto text-xs text-gray-400">100%</span>
+                    </div>
+                    <p class="text-[13px] leading-relaxed text-gray-400">
+                        KAS has a total supply of <span class="text-white font-medium">26,425,144,852 KAS</span> tokens, with <span class="text-white font-medium">25,928,787,103 KAS</span> currently unlocked and in circulation.
+                        An additional <span class="text-white font-medium">2,574,185,441 KAS</span> remains locked, while <span class="text-white font-medium">0 KAS</span> is designated as TBD locked amount.
+                        This information was last updated on <span class="text-white">May 7, 2025</span>.
+                    </p>
+                </div>
             </div>
         </div>
-        <div id="tokenomicsContent" class="block">
-          <h2 class="text-lg font-semibold mb-4">Token Allocation</h2>
-          <div class="flex items-center justify-center mb-2">
-            <div class="relative w-48 h-48">
-              <svg viewBox="0 0 36 36" class="w-full h-full">
-                <path class="text-orange-400" fill="none" stroke="currentColor" stroke-width="4" stroke-dasharray="100, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
-              </svg>
-              <div class="absolute inset-0 flex items-center justify-center text-xs text-gray-300 font-medium">Emissions</div>
-            </div>
-          </div>
-          <div class="flex items-center justify-center mb-4 text-sm text-gray-300">
-            <span class="w-3 h-3 rounded-full bg-orange-400 mr-2"></span> Emissions <span class="ml-auto text-xs text-gray-400">100%</span>
-          </div>
-          <p class="text-[13px] leading-relaxed text-gray-400">
-            KAS has a total supply of <span class="text-white font-medium">26,425,144,852 KAS</span> tokens, with <span class="text-white font-medium">25,928,787,103 KAS</span> currently unlocked and in circulation.
-            An additional <span class="text-white font-medium">2,574,185,441 KAS</span> remains locked, while <span class="text-white font-medium">0 KAS</span> is designated as TBD locked amount.
-            This information was last updated on <span class="text-white">May 7, 2025</span>.
-          </p>
-        </div>
-      </div>
+
+        <!-- Transactions Section -->
+                <div class="card-bg rounded-xl p-8 mb-12 glow-box">
+                        <h2 class="text-2xl font-bold mb-6 glow-text">RECENT TRANSACTIONS</h2>
+                        
+                        <div class="space-y-3" id="transactions-list">
+                                <!-- Sample transactions - replace with real data -->
+                                <div class="transaction-item p-4 rounded-lg">
+                                        <div class="flex justify-between items-center">
+                                                <div>
+                                                        <div class="font-bold">250,000 KAS</div>
+                                                        <div class="text-sm opacity-70">a1b2c3...x4y5z6</div>
+                                                </div>
+                                                <div class="text-sm opacity-80">2 minutes ago</div>
+                                        </div>
+                                </div>
+                                <div class="transaction-item p-4 rounded-lg">
+                                        <div class="flex justify-between items-center">
+                                                <div>
+                                                        <div class="font-bold">180,000 KAS</div>
+                                                        <div class="text-sm opacity-70">d7e8f9...g1h2i3</div>
+                                                </div>
+                                                <div class="text-sm opacity-80">15 minutes ago</div>
+                                        </div>
+                                </div>
+                                <div class="transaction-item p-4 rounded-lg">
+                                        <div class="flex justify-between items-center">
+                                                <div>
+                                                        <div class="font-bold">500,000 KAS</div>
+                                                        <div class="text-sm opacity-70">j4k5l6...m7n8o9</div>
+                                                </div>
+                                                <div class="text-sm opacity-80">1 hour ago</div>
+                                        </div>
+                                </div>
+                        </div>
+                        
+                        <div class="mt-4 text-sm opacity-70">
+                                Transactions are fetched from <a href="https://explorer.kaspa.org/" target="_blank" class="text-green-400 hover:underline">Kaspa Explorer</a>
+                        </div>
+                </div>
+
+        <!-- Footer omitted for brevity -->
+                         <footer class="text-center py-8 border-t border-green-900 border-opacity-30">
+                        <div class="flex justify-center space-x-6 mb-4">
+                                <a href="https://x.com/search?q=Kaspa" target="_blank" class="hover:text-green-300 transition">
+                                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+                                        </svg>
+                                </a>
+                                <a href="https://explorer.kaspa.org/" target="_blank" class="hover:text-green-300 transition">
+                                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"></path>
+                                        </svg>
+                                </a>
+                        </div>
+                        <p class="opacity-70">© 2025 Kaspa Token Airdrop. All rights reserved.</p>
+                </footer>
     </div>
-
-    <!-- Transactions Section -->
-        <div class="card-bg rounded-xl p-8 mb-12 glow-box">
-            <h2 class="text-2xl font-bold mb-6 glow-text">RECENT TRANSACTIONS</h2>
-            
-            <div class="space-y-3" id="transactions-list">
-                <!-- Sample transactions - replace with real data -->
-                <div class="transaction-item p-4 rounded-lg">
-                    <div class="flex justify-between items-center">
-                        <div>
-                            <div class="font-bold">250,000 KAS</div>
-                            <div class="text-sm opacity-70">a1b2c3...x4y5z6</div>
-                        </div>
-                        <div class="text-sm opacity-80">2 minutes ago</div>
-                    </div>
-                </div>
-                <div class="transaction-item p-4 rounded-lg">
-                    <div class="flex justify-between items-center">
-                        <div>
-                            <div class="font-bold">180,000 KAS</div>
-                            <div class="text-sm opacity-70">d7e8f9...g1h2i3</div>
-                        </div>
-                        <div class="text-sm opacity-80">15 minutes ago</div>
-                    </div>
-                </div>
-                <div class="transaction-item p-4 rounded-lg">
-                    <div class="flex justify-between items-center">
-                        <div>
-                            <div class="font-bold">500,000 KAS</div>
-                            <div class="text-sm opacity-70">j4k5l6...m7n8o9</div>
-                        </div>
-                        <div class="text-sm opacity-80">1 hour ago</div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="mt-4 text-sm opacity-70">
-                Transactions are fetched from <a href="https://explorer.kaspa.org/" target="_blank" class="text-green-400 hover:underline">Kaspa Explorer</a>
-            </div>
-        </div>
-
-    <!-- Footer omitted for brevity -->
-             <footer class="text-center py-8 border-t border-green-900 border-opacity-30">
-            <div class="flex justify-center space-x-6 mb-4">
-                <a href="https://x.com/search?q=Kaspa" target="_blank" class="hover:text-green-300 transition">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
-                    </svg>
-                </a>
-                <a href="https://explorer.kaspa.org/" target="_blank" class="hover:text-green-300 transition">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"></path>
-                    </svg>
-                </a>
-            </div>
-            <p class="opacity-70">© 2025 Kaspa Token Presale. All rights reserved.</p>
-        </footer>
-  </div>
-  <script>
-    function copyAddress() {
-      const address = 'kaspa:qzz55pjzn8rmpde8tw9rd84q248fxefjduc3hm2ds3yp2lcmet5jgfg7xqu3c';
-      navigator.clipboard.writeText(address).then(() => {
-        const btn = document.querySelector('button[onclick="copyAddress()"]');
-        btn.textContent = 'COPIED!';
-        btn.classList.add('bg-green-500');
-        setTimeout(() => {
-          btn.textContent = 'COPY ADDRESS';
-          btn.classList.remove('bg-green-500');
-        }, 2000);
-      });
-    }
-    function switchTab(tab) {
-      const aboutTab = document.getElementById("aboutTab");
-      const tokenomicsTab = document.getElementById("tokenomicsTab");
-      const aboutContent = document.getElementById("aboutContent");
-      const tokenomicsContent = document.getElementById("tokenomicsContent");
-      if (tab === "about") {
-        aboutTab.classList.add("bg-[#1E4024]", "text-green-400");
-        aboutTab.classList.remove("bg-[#2B2E35]", "text-white");
-        tokenomicsTab.classList.remove("bg-[#1E4024]", "text-green-400");
-        tokenomicsTab.classList.add("bg-[#2B2E35]", "text-white");
-        aboutContent.classList.remove("hidden");
-        tokenomicsContent.classList.add("hidden");
-      } else {
-        tokenomicsTab.classList.add("bg-[#1E4024]", "text-green-400");
-        tokenomicsTab.classList.remove("bg-[#2B2E35]", "text-white");
-        aboutTab.classList.remove("bg-[#1E4024]", "text-green-400");
-        aboutTab.classList.add("bg-[#2B2E35]", "text-white");
-        aboutContent.classList.add("hidden");
-        tokenomicsContent.classList.remove("hidden");
-      }
-    }
-
-
-    // Simulate dynamic updates
-        setInterval(() => {
-            const soldElement = document.getElementById('sold-kas');
-            const remainingElement = document.getElementById('remaining-kas');
-            const progressBar = document.querySelector('.progress-bar');
-            
-            // Simulate small increases
-            const currentSold = parseInt(soldElement.textContent.replace(/,/g, ''));
-            const newSold = currentSold + Math.floor(Math.random() * 5000);
-            
-            if (newSold <= 11500000) {
-                soldElement.textContent = newSold.toLocaleString();
-                remainingElement.textContent = (11500000 - newSold).toLocaleString();
-                const progressPercent = (newSold / 11500000) * 100;
-                progressBar.style.width = `${progressPercent}%`;
+    <script>
+        function copyAddress() {
+            const address = 'kaspa:qzz55pjzn8rmpde8tw9rd84q248fxefjduc3hm2ds3yp2lcmet5jgfg7xqu3c';
+            navigator.clipboard.writeText(address).then(() => {
+                const btn = document.querySelector('button[onclick="copyAddress()"]');
+                btn.textContent = 'COPIED!';
+                btn.classList.add('bg-green-500');
+                setTimeout(() => {
+                    btn.textContent = 'COPY ADDRESS';
+                    btn.classList.remove('bg-green-500');
+                }, 2000);
+            });
+        }
+        function switchTab(tab) {
+            const aboutTab = document.getElementById("aboutTab");
+            const tokenomicsTab = document.getElementById("tokenomicsTab");
+            const aboutContent = document.getElementById("aboutContent");
+            const tokenomicsContent = document.getElementById("tokenomicsContent");
+            if (tab === "about") {
+                aboutTab.classList.add("bg-[#1E4024]", "text-green-400");
+                aboutTab.classList.remove("bg-[#2B2E35]", "text-white");
+                tokenomicsTab.classList.remove("bg-[#1E4024]", "text-green-400");
+                tokenomicsTab.classList.add("bg-[#2B2E35]", "text-white");
+                aboutContent.classList.remove("hidden");
+                tokenomicsContent.classList.add("hidden");
+            } else {
+                tokenomicsTab.classList.add("bg-[#1E4024]", "text-green-400");
+                tokenomicsTab.classList.remove("bg-[#2B2E35]", "text-white");
+                aboutTab.classList.remove("bg-[#1E4024]", "text-green-400");
+                aboutTab.classList.add("bg-[#2B2E35]", "text-white");
+                aboutContent.classList.add("hidden");
+                tokenomicsContent.classList.remove("hidden");
             }
-        }, 3000);
-  </script>
+        }
+
+
+        // Simulate dynamic updates
+                setInterval(() => {
+                        const soldElement = document.getElementById('sold-kas');
+                        const remainingElement = document.getElementById('remaining-kas');
+                        const progressBar = document.querySelector('.progress-bar');
+                        
+                        // Simulate small increases
+                        const currentSold = parseInt(soldElement.textContent.replace(/,/g, ''));
+                        const newSold = currentSold + Math.floor(Math.random() * 5000);
+                        
+                        if (newSold <= 11500000) {
+                                soldElement.textContent = newSold.toLocaleString();
+                                remainingElement.textContent = (11500000 - newSold).toLocaleString();
+                                const progressPercent = (newSold / 11500000) * 100;
+                                progressBar.style.width = `${progressPercent}%`;
+                        }
+                }, 3000);
+    </script>
 </body>
 </html>
