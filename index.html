@@ -304,23 +304,27 @@
         }
 
 
-        // Simulate dynamic updates
-                setInterval(() => {
-                        const soldElement = document.getElementById('sold-kas');
-                        const remainingElement = document.getElementById('remaining-kas');
-                        const progressBar = document.querySelector('.progress-bar');
-                        
-                        // Simulate small increases
-                        const currentSold = parseInt(soldElement.textContent.replace(/,/g, ''));
-                        const newSold = currentSold + Math.floor(Math.random() * 5000);
-                        
-                        if (newSold <= 11500000) {
-                                soldElement.textContent = newSold.toLocaleString();
-                                remainingElement.textContent = (11500000 - newSold).toLocaleString();
-                                const progressPercent = (newSold / 11500000) * 100;
-                                progressBar.style.width = `${progressPercent}%`;
-                        }
-                }, 3000);
+         // Simulate dynamic updates
+  setInterval(() => {
+    const soldElement = document.getElementById('sold-kas');
+    const remainingElement = document.getElementById('remaining-kas');
+    const progressBar = document.querySelector('.progress-bar');
+
+    const TOTAL_KAS = 21500000;
+
+    // Parse and calculate
+    const currentSold = parseInt(soldElement.textContent.replace(/,/g, ''));
+    const newSold = currentSold + Math.floor(Math.random() * 5000);
+
+    if (newSold <= TOTAL_KAS) {
+      soldElement.textContent = newSold.toLocaleString();
+      const newRemaining = TOTAL_KAS - newSold;
+      remainingElement.textContent = newRemaining.toLocaleString();
+
+      const progressPercent = (newSold / TOTAL_KAS) * 100;
+      progressBar.style.width = `${progressPercent}%`;
+    }
+  }, 3000);
     </script>
 </body>
 </html>
