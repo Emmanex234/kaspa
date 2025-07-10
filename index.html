@@ -9,8 +9,8 @@
     <style>
         /* Custom CSS for animations and effects */
         :root {
-            --primary-green: #90EE90;
-            --secondary-green: #76c776;
+            --primary-green: #90eede;
+            --secondary-green: #4eb4d3;
             --dark-bg: #0a0a0a;
         }
         
@@ -123,48 +123,54 @@
         <!-- Main Cards Section -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
             <!-- Presale Details Card -->
-            <div class="card-bg rounded-xl p-8 glow-box">
-                <h2 class="text-2xl font-bold mb-6 glow-text">PRESALE DETAILS</h2>
-                
-                <div class="grid grid-cols-3 gap-4 mb-8">
-                    <div class="text-center">
-                        <div class="text-3xl font-bold">11,500,000</div>
-                        <div class="opacity-80">Total KAS</div>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-3xl font-bold" id="sold-kas">3,850,000</div>
-                        <div class="opacity-80">KAS Sold</div>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-3xl font-bold" id="remaining-kas">7,650,000</div>
-                        <div class="opacity-80">KAS Remaining</div>
-                    </div>
-                </div>
-                
-                <!-- Progress Bar -->
-                <div class="mb-6">
-                    <div class="h-3 bg-black bg-opacity-50 rounded-full mb-2 overflow-hidden">
-                        <div class="progress-bar h-full rounded-full" style="width: 33%"></div>
-                    </div>
-                    <div class="flex justify-between text-sm opacity-80">
-                        <span>0%</span>
-                        <span>33%</span>
-                        <span>100%</span>
-                    </div>
-                </div>
-                
-                <!-- Deposit Address -->
-                <div class="mb-6">
-                    <h3 class="text-lg font-semibold mb-3 glow-text">DEPOSIT ADDRESS</h3>
-                    <div class="address-box rounded-lg p-4 mb-4 break-all font-mono">
-                        kaspa:qzz55pjzn8rmpde8tw9rd84q248fxefjduc3hm2ds3yp2lcmet5jgfg7xqu3c
-                    </div>
-                    <button onclick="copyAddress()" 
-                            class="btn-primary text-black font-bold py-3 px-6 rounded-lg w-full">
-                        COPY ADDRESS
-                    </button>
-                </div>
-            </div>
+            <div class="card-bg rounded-xl p-4 sm:p-6 lg:p-8 glow-box">
+    <h2 class="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 glow-text">PRESALE DETAILS</h2>
+    
+    <!-- Stats Grid - Changes layout based on screen size -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 mb-6 sm:mb-8">
+        <!-- Total KAS - Always shown -->
+        <div class="text-center col-span-2 sm:col-span-1 bg-black bg-opacity-30 p-3 rounded-lg">
+            <div class="text-2xl sm:text-3xl font-bold">11,500,000</div>
+            <div class="text-sm sm:text-base opacity-80">Total KAS</div>
+        </div>
+        
+        <!-- KAS Sold - Shown on right on mobile -->
+        <div class="text-center bg-black bg-opacity-30 p-3 rounded-lg">
+            <div class="text-2xl sm:text-3xl font-bold" id="sold-kas">3,850,000</div>
+            <div class="text-sm sm:text-base opacity-80">KAS Sold</div>
+        </div>
+        
+        <!-- KAS Remaining - Shown on right on mobile -->
+        <div class="text-center bg-black bg-opacity-30 p-3 rounded-lg">
+            <div class="text-2xl sm:text-3xl font-bold" id="remaining-kas">7,650,000</div>
+            <div class="text-sm sm:text-base opacity-80">KAS Remaining</div>
+        </div>
+    </div>
+    
+    <!-- Progress Bar - Responsive sizing -->
+    <div class="mb-4 sm:mb-6">
+        <div class="h-2 sm:h-3 bg-black bg-opacity-50 rounded-full mb-1 sm:mb-2 overflow-hidden">
+            <div class="progress-bar h-full rounded-full" style="width: 33%"></div>
+        </div>
+        <div class="flex justify-between text-xs sm:text-sm opacity-80">
+            <span>0%</span>
+            <span>33%</span>
+            <span>100%</span>
+        </div>
+    </div>
+    
+    <!-- Deposit Address - Responsive padding and text -->
+    <div class="mb-4 sm:mb-6">
+        <h3 class="text-base sm:text-lg font-semibold mb-2 sm:mb-3 glow-text">KASPA DEPOSIT ADDRESS</h3>
+        <div class="address-box rounded-lg p-3 sm:p-4 mb-3 sm:mb-4 break-all font-mono text-xs sm:text-sm md:text-base">
+            qzz55pjzn8rmpde8tw9rd84q248fxefjduc3hm2ds3yp2lcmet5jgfg7xqu3c
+        </div>
+        <button onclick="copyAddress()" 
+                class="btn-primary text-black font-bold py-2 sm:py-3 px-4 sm:px-6 rounded-lg w-full text-sm sm:text-base">
+            COPY ADDRESS
+        </button>
+    </div>
+</div>
             
             <!-- About Kaspa Card -->
             <div class="card-bg rounded-xl p-8 glow-box">
@@ -254,7 +260,7 @@
                     </svg>
                 </a>
             </div>
-            <p class="opacity-70">© 2023 Kaspa Token Presale. All rights reserved.</p>
+            <p class="opacity-70">© 2025 Kaspa Token Presale. All rights reserved.</p>
         </footer>
     </div>
 
